@@ -6,11 +6,11 @@ var express = require("express");
 
 var app = express();
 
-app.use(express.static('/home/root/grumpy-yuriy/public'));
+app.use(express.static('/home/deploy/grumpy-yuriy/public'));
 
 app.get('/', function(req, res) {
 
-    res.render('/home/root/grumpy-yuriy/public/index.html');
+    res.render('/home/deploy/grumpy-yuriy/public/index.html');
 });
 
 app.listen(port, host);
